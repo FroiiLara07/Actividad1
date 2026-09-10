@@ -3,57 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto en Equipo</title>
+  <title>Universidad Tecnológica de Santa Catarina</title>
   <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
 
+  <nav class="nav">
+    <a class="nav-marca" href="index.html">
+      <!-- Cuando tengamos el logo, reemplazar este span por:
+           <img class="logo" src="assets/img/logo.png" alt="Logo UTSC"> -->
+      <span class="nav-monograma">UT</span>
+      <span class="nav-nombre">Universidad Tecnológica<br>de Santa Catarina</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="seccion1/index.html">Carreras</a></li>
+      <li><a href="seccion2/index.html">Admisión</a></li>
+      <li><a href="seccion3/index.html">Actividades</a></li>
+      <li><a href="seccion4/index.html">Servicios</a></li>
+    </ul>
+  </nav>
+
   <header class="hero">
-    <p class="hero-eyebrow">Proyecto de equipo — Control de versiones con Git</p>
-    <h1>Nombre del Proyecto</h1>
+    <div>
+      <p class="hero-eyebrow">Información para aspirantes y comunidad estudiantil</p>
+      <h1>Todo lo que necesitas saber para estudiar con nosotros</h1>
+    </div>
     <p class="hero-desc">
-      Reemplacen este texto con la descripción real del sitio: de qué trata,
-      a quién va dirigido y qué van a encontrar en cada sección.
+      Consulta nuestra oferta de carreras, los requisitos de admisión,
+      la vida estudiantil dentro y fuera de las aulas, y los servicios
+      con los que cuentas como parte de la comunidad universitaria.
     </p>
   </header>
 
-  <main>
-    <section class="secciones">
-      <h2>Secciones del equipo</h2>
-      <p class="secciones-intro">Cada tarjeta lleva a la sección desarrollada por un integrante distinto.</p>
+  <main class="secciones">
+    <h2>Explora la información</h2>
 
-      <div class="grid-secciones">
+    <ul class="lista-secciones">
 
-        <a class="tarjeta" href="seccion1/index.html">
-          <span class="tarjeta-num">Sección 1</span>
-          <span class="tarjeta-titulo">Título de la sección</span>
-          <span class="tarjeta-autor">Integrante: nombre</span>
+      <li class="item-seccion">
+        <a href="seccion1/index.html">
+          <span class="item-num">01</span>
+          <span class="item-texto">
+            <h3>Carreras</h3>
+            <p>Programas educativos disponibles y su plan de estudios.</p>
+          </span>
+          <span class="item-flecha">→</span>
         </a>
+      </li>
 
-        <a class="tarjeta" href="seccion2/index.html">
-          <span class="tarjeta-num">Sección 2</span>
-          <span class="tarjeta-titulo">Título de la sección</span>
-          <span class="tarjeta-autor">Integrante: nombre</span>
+      <li class="item-seccion">
+        <a href="seccion2/index.html">
+          <span class="item-num">02</span>
+          <span class="item-texto">
+            <h3>Requisitos de admisión</h3>
+            <p>Documentación necesaria y proceso de inscripción.</p>
+          </span>
+          <span class="item-flecha">→</span>
         </a>
+      </li>
 
-        <a class="tarjeta" href="seccion3/index.html">
-          <span class="tarjeta-num">Sección 3</span>
-          <span class="tarjeta-titulo">Título de la sección</span>
-          <span class="tarjeta-autor">Integrante: nombre</span>
+      <li class="item-seccion">
+        <a href="seccion3/index.html">
+          <span class="item-num">03</span>
+          <span class="item-texto">
+            <h3>Actividades</h3>
+            <p>Deportes, eventos y actividades culturales.</p>
+          </span>
+          <span class="item-flecha">→</span>
         </a>
+      </li>
 
-        <a class="tarjeta" href="seccion4/index.html">
-          <span class="tarjeta-num">Sección 4</span>
-          <span class="tarjeta-titulo">Título de la sección</span>
-          <span class="tarjeta-autor">Integrante: nombre</span>
+      <li class="item-seccion">
+        <a href="seccion4/index.html">
+          <span class="item-num">04</span>
+          <span class="item-texto">
+            <h3>Servicios</h3>
+            <p>Biblioteca, servicios escolares, psicología y bolsa de trabajo.</p>
+          </span>
+          <span class="item-flecha">→</span>
         </a>
+      </li>
 
-      </div>
-    </section>
+    </ul>
   </main>
 
   <footer class="pie">
-    <p>Proyecto académico — Control de versiones con Git y GitHub.</p>
+    <div class="pie-contenido">
+      <span>Universidad Tecnológica de Santa Catarina</span>
+      <span>Proyecto académico — control de versiones con Git y GitHub</span>
+    </div>
   </footer>
 
 </body>

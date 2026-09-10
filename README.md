@@ -1,29 +1,42 @@
-# Proyecto en Equipo — Sitio Web con Control de Versiones
+# Sitio informativo de la universidad
 
-Sitio web de 4 secciones desarrollado en equipo usando Git y GitHub, con una
-rama independiente por integrante e integración vía Pull Request.
+Sitio web institucional (tema naranja y blanco) desarrollado en equipo usando
+Git y GitHub, con una rama independiente por integrante e integración vía
+Pull Request.
+
+## Responsables por sección
+
+| # | Sección                  | Responsable | Carpeta      |
+|---|---------------------------|-------------|--------------|
+| 1 | Carreras                  | Juan        | `seccion1/`  |
+| 2 | Requisitos de admisión    | Carlos      | `seccion2/`  |
+| 3 | Actividades                | Missael     | `seccion3/`  |
+| 4 | Servicios                  | Angel       | `seccion4/`  |
+
+El `index.html` (página principal) lo maneja Froy.
 
 ## Estructura del repositorio
 
 ```
-├── index.html              # Página principal (punto de entrada)
+├── index.html               # Página principal (punto de entrada)
 ├── assets/
-│   ├── css/estilos.css     # Estilos compartidos (usados por index y las secciones)
-│   └── js/                 # JS compartido si se necesita
-├── seccion1/index.html     # Sección del integrante 1
-├── seccion2/index.html     # Sección del integrante 2
-├── seccion3/index.html     # Sección del integrante 3
-└── seccion4/index.html     # Sección del integrante 4
+│   ├── css/estilos.css      # Estilos compartidos (nav, footer, tema naranja/blanco)
+│   ├── img/                 # Logo institucional
+│   └── js/                  # JS compartido si se necesita
+├── seccion1/index.html      # Carreras — Juan
+├── seccion2/index.html      # Requisitos de admisión — Carlos
+├── seccion3/index.html      # Actividades — Missael
+└── seccion4/index.html      # Servicios — Angel
 ```
 
-Cada sección ya tiene:
-- Un botón "← Regresar al inicio" que apunta a `../index.html`.
-- Un enlace correspondiente en `index.html`.
+Cada página de sección ya trae el **nav** y el **footer** iguales al resto del
+sitio (no se tocan). Adentro hay una nota tipo `placeholder-nota` marcando
+dónde va el contenido — bórrenla al agregar el suyo.
 
 **Regla:** cada integrante solo edita el contenido dentro de su propia carpeta
-`seccionX/`. Si necesitan un CSS o JS propio, créenlo dentro de su misma
-carpeta (ej. `seccion1/estilos.css`) para evitar pisar el trabajo de los
-demás en `assets/`.
+`seccionX/`, entre el nav y el footer. No modifiquen `assets/css/estilos.css`
+directamente (es compartido); si necesitan un estilo extra muy específico de
+su sección, agréguenlo en un `<style>` dentro de su propio `index.html`.
 
 ## Flujo de trabajo en Git (obligatorio para todos)
 
