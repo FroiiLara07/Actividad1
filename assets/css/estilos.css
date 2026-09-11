@@ -267,6 +267,36 @@ a {
   font-size: 0.95rem;
 }
 
+/* ---------- Listas de contenido dentro de una sección ---------- */
+
+.grupo-contenido {
+  margin-bottom: 2.5rem;
+}
+
+.grupo-contenido h2 {
+  font-size: 1.35rem;
+  color: var(--naranja-oscuro);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--naranja);
+}
+
+.lista-contenido {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-contenido li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--borde);
+  font-size: 1.02rem;
+}
+
+.lista-contenido li:last-child {
+  border-bottom: none;
+}
+
 @media (max-width: 700px) {
   .nav {
     flex-wrap: wrap;
