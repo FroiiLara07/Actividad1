@@ -1,0 +1,109 @@
+
+.seccion2-contenido {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 25px;
+}
+
+.seccion2-bloque {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.seccion2-bloque h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.seccion2-bloque h3 {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.seccion2-bloque p {
+  line-height: 1.7;
+}
+
+.seccion2-bloque ul,
+.seccion2-bloque ol {
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.seccion2-bloque li {
+  margin-bottom: 8px;
+}
+
+.seccion2-paso {
+  border-left: 4px solid currentColor;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 0 8px 8px 0;
+  background: rgba(234, 113, 6, 0.03);
+}
+
+.seccion2-recomendaciones {
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  background: rgba(222, 77, 10, 0.04);
+}
+
+.seccion2-recomendaciones h3 {
+  margin-top: 0;
+}
+
+.seccion2-contacto {
+  border-radius: 12px;
+  padding: 25px 30px;
+  margin-top: 25px;
+  background: rgba(226, 52, 8, 0.05);
+}
+
+.seccion2-contacto h3 {
+  margin-top: 0;
+}
+
+.seccion2-bloque,
+.seccion2-recomendaciones,
+.seccion2-contacto {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seccion2-bloque:hover,
+.seccion2-recomendaciones:hover,
+.seccion2-contacto:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 68, 3, 0.1);
+}
+
+@media (max-width: 600px) {
+
+  .seccion2-contenido {
+    padding: 0 15px;
+    margin-top: 25px;
+  }
+
+  .seccion2-bloque {
+    padding: 20px;
+  }
+
+  .seccion2-bloque h2 {
+    font-size: 24px;
+  }
+
+  .seccion2-bloque h3 {
+    font-size: 19px;
+  }
+
+  .seccion2-recomendaciones,
+  .seccion2-contacto {
+    padding: 20px;
+  }
+
+}
